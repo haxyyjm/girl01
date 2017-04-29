@@ -1,0 +1,27 @@
+server:
+  port: 8080
+  #context-path: /gril01
+  session-timeout: 30
+  tomcat:
+    uri-encoding: UTF-8
+spring:
+  thymeleaf:
+    prefix: classpath:templates/
+    suffix: .html
+    mode: HTML5
+    encoding: UTF-8
+    content-type: text/html
+    cache: false
+  #mongodb
+  data:
+    mongodb:
+      uri: mongodb://xxx:xxx@xxx:27017/xxx
+girl:
+  cupSize: B
+  age: 18
+  content: "cupSize: ${girl.cupSize} , age: ${girl.age}"
+
+qiniu:
+  accessKey: xxxxx
+  secretKey: xxxx
+  bucket: xxxx
